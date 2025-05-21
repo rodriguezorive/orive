@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Habitación Taller de Comercio</title>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Escalado general a 1:250 -->
+      <a-entity scale="0.004 0.004 0.004">
+
+        <!-- Suelo -->
+        <a-plane position="0 0 0" rotation="-90 0 0" width="2.5" height="1.7" color="#cccccc"></a-plane>
+
+        <!-- Pared frontal -->
+        <a-box position="0 1.5 -0.85" width="2.5" height="3" depth="0.01" color="#999999"></a-box>
+
+        <!-- Pared trasera -->
+        <a-box position="0 1.5 0.85" width="2.5" height="3" depth="0.01" color="#999999"></a-box>
+
+        <!-- Pared izquierda -->
+        <a-box position="-1.25 1.5 0" width="0.01" height="3" depth="1.7" color="#aaaaaa"></a-box>
+
+        <!-- Pared derecha -->
+        <a-box position="1.25 1.5 0" width="0.01" height="3" depth="1.7" color="#aaaaaa"></a-box>
+
+        <!-- Techo -->
+        <a-plane position="0 3 0" rotation="90 0 0" width="2.5" height="1.7" color="#dddddd"></a-plane>
+      </a-entity>
+
+      <!-- Cámara y luz -->
+      <a-entity position="0 1.6 3">
+        <a-camera></a-camera>
+        <a-light type="ambient" color="#ffffff"></a-light>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
